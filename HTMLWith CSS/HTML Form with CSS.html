@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Form with CSS</title>
+	<style type="text/css">
+		
+		div.main{
+			background-color: #4d94ff;
+			
+			width: 500px;
+			height: 950px;
+			margin:auto;
+
+		}
+		#grad1 {
+    height: 500px;
+    background: blue; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(light-blue,blue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(light-blue,blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(light-blue,blue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(light-blue,blue); /* Standard syntax (must be last) */
+}
+		div.inner{
+			background-color: #7FFFD4;
+			height: 30px;
+			width: 400px;
+			
+		    border-radius: 10px;
+    		padding: 20px; 
+    		margin: auto;
+    		margin-top:5px;
+		}
+		input[type="text"]{
+
+			height: 20px ; 
+			 width: 200px; 
+			 margin-left: 75px;
+			 color: grey;
+		}
+		textarea{
+			margin-left: 75px;
+		}
+
+		button{
+			margin-left: 200px;
+			margin-top: 10px;
+			height: 50px;
+			width: 100px;
+			border-radius: 25px;
+			background-color: blue;
+
+		}
+		
+		.group{
+			margin-left: 25px;
+			color: white;
+			font-size: 25px;
+		}
+
+	</style>
+</head>
+<body>
+<div class="main" id="">
+	<form>
+		<div class="group">
+		Step1: Your Details 		<br>	</div>
+		<div class="inner">
+		 Name &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Firstname" value="First and Last name"><br>
+		</div>		
+		<div class="inner">
+		Email &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="emailAddress" value="exampl@domain.com"><br></div>
+		<div class="inner" >Phone &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phone" value="e.g. +44750000000000"><br></div>
+		<div class="group">
+		Step1: Delivery Address<br> </div>
+		<div class="inner" style="height:40px;" >Address:&nbsp;&nbsp;&nbsp;&nbsp; <textarea></textarea><br></div>
+		<div class="inner"  >Post Code <input type="text" name="pincode"><br></div>
+		<div class="inner" >Country&nbsp;&nbsp; <input type="text" name="country"><br></div>
+		<div class="group">
+		Step1:Card Details<br></div>
+		<div class="inner" >Card Type<br>
+		<input type="radio" name="card"> &nbsp;&nbsp;<img src="visa.jpg" height="10px"> VISA
+		<input type="radio" name="card">&nbsp;&nbsp; <img src="index.jpg" height="10px"> AmEx
+		<input type="radio" name="Mastercard"> &nbsp;&nbsp;<img src="master.jpg" height="10px">MasterCard</div>
+		<div class="inner" >Card Number <input type="text" name="cardnumber"></div>
+		<div class="inner" >Security Code <input type="text" name="security"></div>
+		<div class="inner" >Name on Card <input type="text" name="card" value="exact name as on the card"> </div>
+		<button>BUT IT!</button><br> 
+		</form>
+</div>
+</body>
+</html>
